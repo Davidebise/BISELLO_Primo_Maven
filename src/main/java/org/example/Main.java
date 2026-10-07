@@ -43,6 +43,8 @@ void main() throws IOException {
     CodiceFiscale cf = CodiceFiscale.of(person);
 
     System.out.println(cf.getValue()); // RSSMRA75C22H501I
+
+    println(CodiceFiscale.isFormatValid(cf.getValue()));
 }
 
 public static LocalDate dataNascita(){
